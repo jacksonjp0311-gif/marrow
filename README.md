@@ -11,10 +11,11 @@ Continuous field.
 A runner that does not stop.  
 It wakes. It works. It sleeps. It keeps what holds.
 
-The field is sparse and binary.  
+The field is sparse and binary (4096-bit codes).  
+Overlap is integer intersection size.  
 Every cycle writes into it.  
 The active window never sees the whole history.  
-It receives a fixed readout and the exact numbers that produced it.
+It receives a fixed readout and the exact overlap numbers that produced it.
 
 Changes remain candidates until the gate passes and the twin control shows a difference.  
 Durable promotion waits for the human.
@@ -37,18 +38,17 @@ give it a task, it returns the result and the receipt of what the field used.
 
 ```
 marrow/
-  field.py          sparse binary store + fixed readout
+  field.py          sparse binary store + fixed readout (integer overlap)
   runner.py         awake / sleep cycle
   gate.py           reject what fails
 data/
-  witness.jsonl     append-only record
-  field.bin         persistent geometry
+  field.jsonl       append-only events with bit signatures
 .github/workflows/
   awake.yml
   sleep.yml
 ```
 
-Twin control runs in parallel from the first commit.  
+Twin control runs in parallel.  
 Treatment and control share the same gate.  
 Only measured difference counts.
 
