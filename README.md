@@ -17,6 +17,10 @@ Every cycle writes into it.
 The active window never sees the whole history.  
 It receives a fixed readout and the exact overlap numbers that produced it.
 
+The spine absorbs NOMAD's bounded arithmetic synthesizer and contextual learner.  
+Awake attempts a fixed public example set and records the candidate or the abstention.  
+No unrestricted code generation. No self-promotion.
+
 Changes remain candidates until the gate passes and the twin control shows a difference.  
 Durable promotion waits for the human.
 
@@ -26,7 +30,7 @@ Durable promotion waits for the human.
 
 | Mode | Cadence | What it does |
 |------|---------|--------------|
-| **Awake** | Frequent, short | Reads a fixed slice from the field. Does the work. Writes the outcome and the overlap receipt. |
+| **Awake** | Frequent, short | Reads a fixed slice from the field. Attempts bounded synthesis on a toy task. Writes the outcome and the overlap receipt. |
 | **Sleep** | Less frequent, longer | Folds the recent log into the permanent field. Measures drift. Removes what no longer holds weight. |
 
 The interface is the same in both modes:  
@@ -41,6 +45,7 @@ marrow/
   field.py          sparse binary store + fixed readout (integer overlap)
   runner.py         awake / sleep cycle
   gate.py           reject what fails
+  spine/            absorbed NOMAD pieces (safe eval, learner, bounded genesis)
 data/
   field.jsonl       append-only events with bit signatures
 .github/workflows/
@@ -59,6 +64,7 @@ Only measured difference counts.
 Not a mind.  
 Not AGI.  
 Not autonomous promotion.  
+Not unrestricted coding.
 
 The field grows only by append.  
 The readout is fixed.  
